@@ -9,7 +9,7 @@ copyright: "&copy; 2024 Tanis Webb"
 
 # Repository
 repo_name: "observatory-game"
-repo_url: "https://github.com/stockbrot/observatory-game"
+# repo_url: "https://github.com/stockbrot/observatory-game"
 
 # Configuration
 docs_dir: "docs"
@@ -65,3 +65,7 @@ extra:
 # Page tree
 nav:
   - "Home": "index.md"
+  - "Game":
+    - "About": "game/about.md"
+  - "Info":
+    - "About": "info/about.md"
