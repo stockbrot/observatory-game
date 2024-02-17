@@ -55,7 +55,7 @@ plugins:
 extra_javascript:
   - "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML"
 extra_css:
-  - "docs/assets/css/custom.css"
+  - "assets/css/custom.css"
 extra:
   manifest: "manifest.json"
   social:
@@ -66,6 +66,6 @@ extra:
 nav:
   - "Home": "index.md"
   - "Game":
-    - "About": "game/about.md"
+    - "About the Game": "game/about.md"
   - "Info":
-    - "About": "info/about.md"
+    - "About Me": "info/about.md"
