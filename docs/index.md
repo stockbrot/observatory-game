@@ -8,7 +8,6 @@
 <br>Observatory Game<br>Title TBD
 </h1>
 
-![Eyecatch image](assets/images/eyecatcher.jpg)
 
 # Welcome
 

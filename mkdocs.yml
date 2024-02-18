@@ -5,7 +5,9 @@ site_author: Tanis Webb
 site_url: https://observatory-contact.netlify.app/
 
 # Copyright
-copyright: Copyright &copy; 2024 Tanis Webb
+copyright: >
+    Copyright &copy; 2024 Tanis Webb </br>
+    <a href="#__consent">Change cookie settings</a>
 
 # Repository
 repo_name: observatory-game
@@ -28,21 +30,22 @@ theme:
   name: material
   language: en
   shortcuts:
-    help: 191 # ?
     next: 78 # n
     previous: 80 # p
     search: 83 # s
   features:
     - navigation.indexes
     # instant not compatible with language switching. :(
-    # - navigation.instant
-    # - navigation.instant.progress
+    - navigation.instant
+    - navigation.instant.progress
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
     - toc.follow
   font:
-    text: Ubuntu
+    # text: Work Sans
+    # text: Raleway
+    text: Poppins
     code: Ubuntu Mono
   logo: assets/images/favicon.png
   favicon: assets/images/favicon.png
@@ -59,21 +62,22 @@ markdown_extensions:
       separator: _
 
 plugins:
-  - i18n:
-      docs_structure: folder
-      languages:
-        - locale: en
-          default: true
-          name: English
-          build: true
-        - locale: de
-          name: Deutsch
-          build: true
+  # Translation is broken due to "i18n is not installed" on netlify
+  # - i18n:
+  #     docs_structure: folder
+  #     languages:
+  #       - locale: en
+  #         default: true
+  #         name: English
+  #         build: true
+  #       - locale: de
+  #         name: Deutsch
+  #         build: true
   - search:
       separator: '[\s\-\.]+'
       lang:
         - en
-        - de
+        # - de
 
 # Customization
 extra_javascript:
@@ -81,16 +85,24 @@ extra_javascript:
 extra_css:
   - assets/css/custom.css
 extra:
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
   social:
     - icon: fontawesome/brands/itch-io
       link: https://doctororbit.itch.io/
-  alternate:
-    - name: English
-      link: /
-      lang: en
-    - name: Deutsch
-      link: /de/
-      lang: de
+  # Toggle for switching languages
+  # alternate:
+  #   - name: English
+  #     link: /
+  #     lang: en
+  #   - name: Deutsch
+  #     link: /de/
+  #     lang: de
 
 # Page tree
 nav:
