@@ -1,16 +1,14 @@
-!!! error "Work in Progress"
+!!! error "In Bearbeitung"
 
-    This website is still pretty empty. You must've found it by accident?!
-    Anyway, I'm here to make games. Right now, I'm working on a [SETI inspired game](game/index.md)
+    Diese webseite ist immernoch im Aufbau. Du musst sie wohl durch zufall gefunden haben.
+    <br>Ich bin dabei ein [Spiel] zu machen was durch [SETI] Ereignisse inspiriert ist.
 
 </br>    
 <h1 align="center">
 <br>Observatory Game<br>Title TBD
 </h1>
 
-![Eyecatch image](assets/images/eyecatcher.jpg)
-
-# Welcome
+# Willkommen
 
 Hey there,
 My name is Tanis. I'm a 30+ year old indie game developer.
@@ -21,3 +19,5 @@ You can find my games [Package Man] and [SunDay] on my [itch.io].
 [itch.io]: https://doctororbit.itch.io
 [Package Man]: https://doctororbit.itch.io/package-man
 [SunDay]: https://doctororbit.itch.io/sunday
+[Spiel]: game/index.md
+[SETI]: https://www.seti.org/
