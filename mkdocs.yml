@@ -1,38 +1,51 @@
 # Project information
-site_name: "Observatory Game Website"
-site_description: "Observatory Game Website description"
-site_author: "Tanis Webb"
-site_url: "https://observatory-contact.netlify.app/"
+site_name: Observatory Game Website
+site_description: Observatory Game Website description
+site_author: Tanis Webb
+site_url: https://observatory-contact.netlify.app/
 
 # Copyright
-copyright: "&copy; 2024 Tanis Webb"
+copyright: Copyright &copy; 2024 Tanis Webb
 
 # Repository
-repo_name: "observatory-game"
-# repo_url: "https://github.com/stockbrot/observatory-game"
+repo_name: observatory-game
+# repo_url: https://github.com/stockbrot/observatory-game
 
 # Configuration
-docs_dir: "docs"
+docs_dir: docs
 theme:
-  name: "material"
-  language: "en"
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  name: material
+  language: en
   shortcuts:
     help: 191 # ?
     next: 78 # n
     previous: 80 # p
     search: 83 # s
-  palette:
-    primary: "cyan"
-    accent: "cyan"
-    scheme: "slate"
   features:
-    - tabs
+    - navigation.indexes
+    # instant not compatible with language switching. :(
+    # - navigation.instant
+    # - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - toc.follow
   font:
-    text: 'Ubuntu'
-    code: 'Ubuntu Mono'
-  icon:
-    #logo: 'images/logo.svg'
-    #favicon: 'assets/images/favicon.ico'
+    text: Ubuntu
+    code: Ubuntu Mono
+  logo: assets/images/favicon.png
+  favicon: assets/images/favicon.png
 
 # Extensions
 markdown_extensions:
@@ -43,29 +56,49 @@ markdown_extensions:
       enable_dollar_delimiter: true
   - toc:
       permalink: true
-      separator: "_"
+      separator: _
 
 plugins:
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: de
+          name: Deutsch
+          build: true
   - search:
       separator: '[\s\-\.]+'
       lang:
         - en
+        - de
 
 # Customization
 extra_javascript:
-  - "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML"
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML
 extra_css:
-  - "assets/css/custom.css"
+  - assets/css/custom.css
 extra:
-  manifest: "manifest.json"
   social:
-    - icon: "fontawesome/brands/youtube"
-      link: "https://youtube.com/doctororbit"
+    - icon: fontawesome/brands/itch-io
+      link: https://doctororbit.itch.io/
+  alternate:
+    - name: English
+      link: /
+      lang: en
+    - name: Deutsch
+      link: /de/
+      lang: de
 
 # Page tree
 nav:
-  - "Home": "index.md"
-  - "Game":
-    - "About the Game": "game/about.md"
-  - "Info":
-    - "About Me": "info/about.md"
+  - Home: index.md
+  - Game:
+    - game/index.md
+    - Overview: game/about.md
+  - Info:
+    - info/index.md
+    - About Me: info/about.md
+    - About Website: info/website.md
