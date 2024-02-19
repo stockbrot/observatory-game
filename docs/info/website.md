@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # About this Website
 
 This [websites boilerplate] was made by [peaceiris] and is based on [MkDocs] + [Material for MkDocs] 
