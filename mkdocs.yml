@@ -34,14 +34,16 @@ theme:
     previous: 80 # p
     search: 83 # s
   features:
-    - navigation.indexes
+    # - navigation.indexes
     # instant not compatible with language switching. :(
     - navigation.instant
     - navigation.instant.progress
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
-    - toc.follow
+    - navigation.top
+    - toc.integrate
+    # - toc.follow
   font:
     # text: Work Sans
     # text: Raleway
@@ -60,6 +62,8 @@ markdown_extensions:
   - toc:
       permalink: true
       separator: _
+      title: 'On this page:'
+      permalink_title: 'Anchor link to this section for reference'
 
 plugins:
   # Translation is broken due to "i18n is not installed" on netlify
@@ -85,13 +89,21 @@ extra_javascript:
 extra_css:
   - assets/css/custom.css
 extra:
+  analytics:
+    provider: google
+    property: G-1WR0665CD6
   consent:
-    title: Cookie consent
+    cookies:
+      analytics:
+        name: Google Analytics
+        checked: false
+    title: Cookie Consent
     description: >- 
       We use cookies to recognize your repeated visits and preferences, as well
       as to measure the effectiveness of our documentation and whether users
       find what they're searching for. With your consent, you're helping us to
       make our documentation better.
+  # Social links at the bottom right corner
   social:
     - icon: fontawesome/brands/itch-io
       link: https://doctororbit.itch.io/
@@ -108,9 +120,8 @@ extra:
 nav:
   - Home: index.md
   - Game:
-    - game/index.md
     - Overview: game/about.md
+    - Adding: game/adding.md
   - Info:
-    - info/index.md
     - About Me: info/about.md
     - About Website: info/website.md

@@ -1,7 +1,12 @@
+---
+hide:
+  - navigation
+---
+
 !!! error "Work in Progress"
 
     This website is still pretty empty. You must've found it by accident?!
-    Anyway, I'm here to make games. Right now, I'm working on a [SETI inspired game](game/index.md)
+    Anyway, I'm here to make games. Right now, I'm working on a [SETI inspired game](game/about.md)
 
 </br>    
 <h1 align="center">
