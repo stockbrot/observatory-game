@@ -9,23 +9,20 @@ h3 {
     border-left: solid 2px #189993;
 }
 
-/*:root {
-    /* primary color shades *
-    --md-primary-bg-color--light:   #19C5C1;       /* search text *
-    --md-primary-bg-color:          #19C5C1;       /* Header text color *
-    --md-primary-fg-color:          #19C5C1;       /* "background" but not really, usefull for sidebery *
-    --md-accent-fg-color:           #19C5C1;
-    --md-primary-fg-color--light:   #19C5C1;
-    --md-primary-fg-color--dark:   #189993;
+:root {
+    --md-default-bg-color: #0d1011;
 }
-*/
 
 [data-md-color-scheme="slate"] {
-    background-color: #0d1011;
+    background: #0E1011;
+    background-image: linear-gradient(90deg, #0d1011 0%, rgb(13, 16, 17) 5%, rgb(5, 34, 40) 100%);
+/*    background-repeat: no-repeat;*/
 }
 
-[data-md-color-scheme="default"] > a {
-    color: black;
+@media screen and (min-width: 76.25em) {
+    .md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link:not(.md-nav__container) {
+        display: none;
+    }
 }
 
 /* page links */
@@ -38,15 +35,10 @@ h3 {
     color: #189993;
 }
 
-/* translate selector 
-.md-select__list {
-    background-color: #0d1011;
-}
-*/
-
 /* header background image */
 .md-header, .md-tabs {
-    background-image: url("../images/header-bg.jpg");
-    background-position: bottom; /* Center the image */
-    background-repeat: repeat; /* Do not repeat the image */
+    background: #0d1011;
+    background-image: url("/assets/images/header-bg.jpg");
+    background-position: bottom;
+    background-repeat: repeat;
 }
