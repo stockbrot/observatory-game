@@ -77,6 +77,11 @@ h3 {
 }
 
 /*
+@media screen and (min-width: 76.25em) {
+    md-nav__item md-nav__item--active md-nav__item--nested > .md-nav__link {
+        display: none;
+    }
+}
 .md-nav--primary .md-nav__link {
     color: white;
 }
