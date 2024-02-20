@@ -53,3 +53,8 @@ h3 {
 .md-header--shadow {
     box-shadow: none;
 }
+
+/* margin for tasklist */
+.task-list-control {
+    margin-right: 1em;
+}

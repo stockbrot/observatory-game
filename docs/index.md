@@ -11,7 +11,7 @@ hide:
 
 </br>    
 <h1 align="center">
-<br>Quantum Contact<br>Alien Frequencies
+<br>Quantum Contact<br>
 </h1>
 
 
