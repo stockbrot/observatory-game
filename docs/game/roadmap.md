@@ -3,29 +3,29 @@ hide:
     - toc
 ---
 
-- [x] **1. Conceptualize Game Idea**:  
-Develop a unique and engaging idea for "Voices of the Void".
-- [X] **2. Design Minimum Viable Product (MVP)**:  
-Outline the core mechanics and features that will define the gameplay. Outline the core mechanics and features that will define the gameplay.
-- [x] **3. Create Prototype Map**:  
-Design a basic layout of the game world.
-- [ ] **4. Develop Placeholder Assets**:  
-Create temporary assets to be used during early testing.
-- [ ] **5. Implement Signal Detection**:  
-Develop the system for detecting and responding alien signals.
-- [ ] **6. Character Design**:  
-Sketch out main characters and their abilities.
-    * [ ] **6.1. Player Character**:  
-    Design the main character that players will control.
-    * [ ] **6.2. Non-Player Characters (NPCs)**:  
-    Design the characters that players will interact with.
-    * [ ] **6.3. Enemies**:  
-    Design the adversaries that players will face.
-- [ ] **10. Storyline Development**:  
-Craft a compelling narrative for the game.
-- [ ] **11. Level Design**:  
-Create challenging and engaging levels.
-- [ ] **12. Sound Design**:  
-Compose music and sound effects to enhance the gaming experience.
-- [ ] **13. Playtesting**:  
-Test the game for bugs and balance issues.
+- [x] **Game Idea Conception**:  
+The idea for "Quantum Contact" has been defined and mapped out.
+- [X] **Minimum Viable Product (MVP) Design**:  
+The base mechanics and features that define the gameplay have been developed.
+- [x] **Prototype Map Creation**:  
+A first prototype map layout has been made.
+- [ ] **Placeholder Assets Development**:  
+Temporary assets for use during early testing are being developed.
+- [ ] **Signal Detection Implementation**:  
+A system for detecting and responding to alien signals is being developed.
+- [ ] **Character Design**:  
+The main and secondary characters, along with their abilities, are being sketched.
+    * [ ] **Player Character**:  
+    The main character that you will control is being designed.
+    * [ ] **Non-Player Characters (NPCs)**:  
+    The characters that you will interact with are being designed.
+    * [ ] **Enemies**:  
+    The *adversaries* that you will face are being designed.
+- [ ] **Storyline Development**:  
+A compelling narrative for the game is being crafted.
+- [ ] **Level Design**:  
+Challenging and engaging levels are being created.
+- [ ] **Sound Design**:  
+Music and sound effects to enhance your gaming experience are being composed.
+- [ ] **Playtesting**:  
+The game is being tested for bugs and balance issues. Your feedback will be valuable in this process.
