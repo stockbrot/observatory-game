@@ -1,4 +1,4 @@
-# Adding
+# About the Developer
 
 ## Operis sic sanguine
 

@@ -32,6 +32,7 @@ theme:
         icon: material/weather-night
         name: Switch to light mode
   name: material
+  custom_dir: overrides
   language: en
   shortcuts:
     next: 78 # n
@@ -40,26 +41,32 @@ theme:
   features:
     - navigation.indexes
     # instant not compatible with language switching. :(
-    - navigation.instant
-    - navigation.instant.progress
+    # - navigation.instant
+    # - navigation.instant.progress
     - navigation.tracking
     - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.top
+    # - navigation.tabs.sticky
     - navigation.sections
-    - toc.integrate
-    - header.autohide
-    # - toc.follow
+    - navigation.top
+    - navigation.footer
+    # maybe, maybe not
+    # - toc.integrate
+    # - header.autohide
+    - content.tooltips
+    - toc.follow
   font:
-    # text: Work Sans
+    text: Work Sans
     # text: Raleway
-    text: Poppins
+    # text: Poppins
     code: Ubuntu Mono
   logo: assets/images/favicon.png
   favicon: assets/images/favicon.png
 
 # Extensions
 markdown_extensions:
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - admonition
   - codehilite
   - footnotes
@@ -73,22 +80,22 @@ markdown_extensions:
 
 plugins:
   # Translation is broken due to "i18n is not installed" on netlify
-  # - i18n:
-  #     docs_structure: folder
-  #     languages:
-  #       - locale: en
-  #         default: true
-  #         name: English
-  #         build: true
-  #       - locale: de
-  #         name: Deutsch
-  #         build: true
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: de
+          name: Deutsch
+          build: true
   - search:
       separator: '[\s\-\.]+'
       lang:
         - en
-        # - de
-  - blog
+        - de
+  # - blog
 
 # Customization
 extra_css:
@@ -99,22 +106,23 @@ extra:
     - icon: fontawesome/brands/itch-io
       link: https://doctororbit.itch.io/
   # Toggle for switching languages
-  # alternate:
-  #   - name: English
-  #     link: /
-  #     lang: en
-  #   - name: Deutsch
-  #     link: /de/
-  #     lang: de
+  alternate:
+    - name: English
+      link: /
+      lang: en
+    - name: Deutsch
+      link: /de/
+      lang: de
 
 # Page tree
 nav:
   - Home: index.md
   - Game:
-    - Overview: game/about.md
-    - Adding: game/adding.md
+    - About the Game: game/about.md
+    - Roadmap: game/roadmap.md
+    - Links: game/links.md
   - Info:
-    - About Me: info/about.md
-    - About Website: info/website.md
-  - Blog: 
-    - blog/index.md
+    - About Me: info/about_me.md
+    - About Website: info/about.md
+  # - Blog: 
+  #   - blog/index.md
