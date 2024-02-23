@@ -8,8 +8,6 @@ Dieses [Website-Boilerplate] wurde von [peaceiris] erstellt und basiert auf [MkD
 
 Ihr könnt euch auch den Github von [dieser Website] ansehen.
 
-Favicon erstellt von [Freepik - Flaticon]
-
 Bereitgestellt mit Netlify: [![Netlify Status](https://api.netlify.com/api/v1/badges/4c45c6c5-eebd-4954-ab80-89352fe1899c/deploy-status)](https://app.netlify.com/sites/observatory-contact/deploys)
 
 ## Website Feedback

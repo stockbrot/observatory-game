@@ -14,6 +14,8 @@ hide:
 <br>Quantum Contact<br>
 </h1>
 
+![eyecatch image of game quantum contact](assets/images/eyecatcher3_tp.png)
+
 
 # Welcome
 
