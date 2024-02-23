@@ -58,3 +58,8 @@ h3 {
 .task-list-control {
     margin-right: 1em;
 }
+
+.ytIframe {
+    width: 44em;
+    height: 24rem;
+}
